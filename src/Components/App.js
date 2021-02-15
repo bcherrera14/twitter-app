@@ -5,6 +5,8 @@ import TweetFavorites from './tweets/TweetFavorites';
 import TweetSearch from './tweets/TweetSearch';
 import Header from './Header';
 
+import './App.css';
+
 const App = () => {
 	return (
 		<div className="container">
