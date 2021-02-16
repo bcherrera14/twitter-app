@@ -3,6 +3,7 @@ import { Form, Col, Card, Button } from 'react-bootstrap';
 
 import TweetCard from './TweetCard';
 import tweetData from '../../tweetData';
+import TweetFeed from './TweetFeed';
 
 class TweetSearch extends React.Component {
 	constructor() {
@@ -12,15 +13,13 @@ class TweetSearch extends React.Component {
 	}
 
 	componentDidMount() {
-		this.setState({ tweetData });
+		// this.setState({ tweetData });
 	}
 
 	onFormSubmit(e) {
 		e.preventDefault();
 		const searchTerm = e.target.searchTerm.value;
-		const response = this.state.tweetData.filter(
-			(tweet) => tweet.firstName.toLowerCase() === searchTerm.toLowerCase()
-		);
+		const response = tweetData.filter((tweet) => tweet.firstName.toLowerCase() === searchTerm.toLowerCase());
 		this.setState({
 			tweetData: response
 		});
@@ -54,11 +53,7 @@ class TweetSearch extends React.Component {
 						</Col>
 					</Form.Row>
 				</Form>
-				<div className="card-grid d-flex flex-column">
-					<TweetCard />
-					<TweetCard />
-					<TweetCard />
-				</div>
+				<TweetFeed tweetData={this.state.tweetData} />
 			</div>
 		);
 	}

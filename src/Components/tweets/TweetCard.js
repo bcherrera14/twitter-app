@@ -2,7 +2,7 @@ import React from 'react';
 import { Form, Col, Card, Button } from 'react-bootstrap';
 import faker from 'faker';
 
-const TweetCard = () => {
+const TweetCard = ({ tweet }) => {
 	return (
 		<Card style={{ width: '50rem' }}>
 			<Card.Body>
@@ -16,20 +16,20 @@ const TweetCard = () => {
 					</div>
 					<div>
 						<Card.Title>
-							{faker.name.firstName()} {faker.name.lastName()}
+							{tweet.firstName} {tweet.lastName}
 						</Card.Title>
-						<Card.Subtitle className="mb-2 text-muted">@{faker.internet.userName()}</Card.Subtitle>
+						<Card.Subtitle className="mb-2 text-muted">{tweet.username}</Card.Subtitle>
 					</div>
 					<div className="ml-auto mb-4">
-						<Card.Subtitle className="text-muted">18 Nov 2018</Card.Subtitle>
+						<Card.Subtitle className="text-muted">{tweet.date}</Card.Subtitle>
 					</div>
 				</div>
-				<Card.Text className="pt-3">{faker.lorem.paragraph()}</Card.Text>
+				<Card.Text className="pt-3">{tweet.textContent}</Card.Text>
 
 				<i className="far fa-heart p-1" />
-				<span>5</span>
+				<span>{tweet.likes}</span>
 				<i className="fas fa-retweet p-1" />
-				<span>5</span>
+				<span>{tweet.retweets}</span>
 			</Card.Body>
 		</Card>
 	);
