@@ -7,3 +7,34 @@
 img {
 	width: 75px;
 }
+
+form {
+	margin-top: 50px;
+	width: 50%;
+}
+
+.search {
+	position: relative;
+}
+
+.search i {
+	position: absolute;
+	display: block;
+	top: 12px;
+	padding-left: 13px;
+	width: 45px;
+}
+
+#search-input {
+	padding-left: 40px;
+}
+
+.card-grid {
+	height: 100vh;
+	padding-top: 3rem;
+}
+
+.card {
+	margin: 15px 0px;
+	border-radius: 1rem;
+}
