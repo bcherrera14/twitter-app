@@ -39,39 +39,42 @@ class TweetSearch extends React.Component {
 	render() {
 		console.log(this.state.tweetData);
 		return (
-			<div className="d-flex justify-content-center flex-column align-items-center">
-				<Form onSubmit={this.onFormSubmit}>
-					<Form.Row className="align-items-center">
-						<Col xs="auto" className="my-1">
-							<Form.Label className="mr-sm-2" htmlFor="inlineFormCustomSelect" srOnly>
-								Preference
-							</Form.Label>
-							<Form.Control as="select" className="mr-sm-2" id="inlineFormCustomSelect" custom>
-								<option value="username">Username</option>
-								<option value="keyword">Keyword</option>
-							</Form.Control>
-						</Col>
-						<Col className="my-1">
-							<Form.Label htmlFor="inlineFormInputName" srOnly>
-								Search
-							</Form.Label>
-							<div className="search">
-								<Form.Control
-									id="search-input"
-									name="searchTerm"
-									autoComplete="off"
-									placeholder="Search for tweets"
-								/>
-								<span>
-									<i className="fas fa-search" />
-								</span>
-							</div>
-						</Col>
-						<Col xs="auto" className="my-1">
-							<Button type="submit">Search</Button>
-						</Col>
-					</Form.Row>
-				</Form>
+			<div id="search-content" className="d-flex justify-content-center flex-column align-items-center mt-5">
+				<div className="search-card card p-3 d-flex justify-content-center align-items-center">
+					<Form onSubmit={this.onFormSubmit}>
+						<Form.Row className="align-items-center">
+							<Col xs="auto" className="my-1">
+								<Form.Label className="mr-sm-2" htmlFor="inlineFormCustomSelect" srOnly>
+									Preference
+								</Form.Label>
+								<Form.Control as="select" className="mr-sm-2" id="inlineFormCustomSelect" custom>
+									<option value="username">Username</option>
+									<option value="keyword">Keyword</option>
+								</Form.Control>
+							</Col>
+							<Col className="my-1">
+								<Form.Label htmlFor="inlineFormInputName" srOnly>
+									Search
+								</Form.Label>
+								<div className="search">
+									<Form.Control
+										id="search-input"
+										name="searchTerm"
+										autoComplete="off"
+										placeholder="Search for tweets"
+									/>
+									<span>
+										<i className="fas fa-search" />
+									</span>
+								</div>
+							</Col>
+							<Col xs="auto" className="my-1">
+								<Button type="submit">Search</Button>
+							</Col>
+						</Form.Row>
+					</Form>
+				</div>
+
 				<TweetFeed tweetData={this.state.tweetData} />
 			</div>
 		);

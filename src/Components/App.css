@@ -1,7 +1,31 @@
+html,
+body {
+	background: #d7dde8;
+}
+
 .headline {
 	height: 100%;
 	margin-top: 40%;
 	margin-bottom: auto;
+}
+
+#search-content {
+	/* margin-top: 75px; */
+	padding-top: 30px;
+}
+
+.search-card {
+	width: 40rem;
+}
+
+.search {
+	width: 325px;
+}
+
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 15px 0px;
+	border-radius: 1rem;
 }
 
 .card-img {
@@ -14,11 +38,6 @@
 
 .profile-grid {
 	margin-top: 3rem;
-}
-
-form {
-	margin-top: 50px;
-	width: 50%;
 }
 
 .search {
@@ -40,9 +59,4 @@ form {
 .card-grid {
 	height: 100vh;
 	padding-top: 3rem;
-}
-
-.card {
-	margin: 15px 0px;
-	border-radius: 1rem;
 }
