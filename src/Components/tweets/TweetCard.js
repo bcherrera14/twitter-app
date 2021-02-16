@@ -10,7 +10,7 @@ const TweetCard = ({ tweet }) => {
 					<div className="mr-2">
 						<img
 							src="https://avatars.githubusercontent.com/u/11397332?s=460&u=3f3c56d4899795a3665aadfc798f0a5eaba4bfd5&v=4"
-							className="rounded-circle"
+							className="rounded-circle card-img"
 							alt="profile"
 						/>
 					</div>

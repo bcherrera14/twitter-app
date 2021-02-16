@@ -4,8 +4,16 @@
 	margin-bottom: auto;
 }
 
-img {
+.card-img {
 	width: 75px;
+}
+
+.profile-img {
+	width: 250px;
+}
+
+.profile-grid {
+	margin-top: 3rem;
 }
 
 form {

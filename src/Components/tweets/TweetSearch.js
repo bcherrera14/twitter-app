@@ -34,7 +34,6 @@ class TweetSearch extends React.Component {
 			tweetData: response
 		});
 		console.log(e.target.inlineFormCustomSelect.value);
-		// console.log(response);
 	}
 
 	render() {

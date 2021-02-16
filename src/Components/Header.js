@@ -12,7 +12,7 @@ const Header = () => {
 			<Navbar.Collapse id="basic-navbar-nav">
 				<Nav className="ml-auto">
 					<Link className="nav-link" to="/tweet/favorites">
-						Favorties
+						Trending
 					</Link>
 					<Link className="nav-link" to="/tweet/search">
 						Search
