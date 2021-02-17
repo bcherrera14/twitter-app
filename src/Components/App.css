@@ -33,7 +33,14 @@ body {
 }
 
 .profile-img {
-	width: 250px;
+	width: 225px;
+	margin: 10px 0;
+	border: 1px solid whitesmoke;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+button {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .profile-grid {
@@ -59,4 +66,20 @@ body {
 .card-grid {
 	height: 100vh;
 	padding-top: 3rem;
+}
+
+.modal-content {
+	width: auto;
+	border-radius: 1rem;
+}
+
+.modal-body {
+	padding: 0;
+}
+
+.modal-body > .card {
+	margin: 0;
+	box-shadow: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
