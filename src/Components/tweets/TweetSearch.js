@@ -13,7 +13,7 @@ class TweetSearch extends React.Component {
 	}
 
 	componentDidMount() {
-		// this.setState({ tweetData });
+		this.setState({ tweetData });
 	}
 
 	onFormSubmit(e) {

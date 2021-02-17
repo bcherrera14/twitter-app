@@ -1,6 +1,6 @@
 html,
 body {
-	background: #d7dde8;
+	background: #edf2f7;
 }
 
 .headline {
@@ -11,11 +11,12 @@ body {
 
 #search-content {
 	/* margin-top: 75px; */
-	padding-top: 30px;
+	padding-top: 56px;
 }
 
-.search-card {
+div > .search-card {
 	width: 40rem;
+	margin: 0;
 }
 
 .search {
@@ -33,10 +34,11 @@ body {
 }
 
 .profile-img {
-	width: 225px;
+	width: 220px;
+	border: 7px solid whitesmoke;
 	margin: 10px 0;
-	border: 1px solid whitesmoke;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 0 !important;
 }
 
 button {
