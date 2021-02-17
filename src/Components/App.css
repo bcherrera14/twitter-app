@@ -4,14 +4,17 @@ body {
 }
 
 .headline {
-	height: 100%;
-	margin-top: 40%;
+	height: 100vh;
+	margin-top: 56px;
 	margin-bottom: auto;
+}
+
+div > .jumbotron {
+	min-height: 300px;
 }
 
 #search-content {
 	/* margin-top: 75px; */
-	padding-top: 56px;
 }
 
 div > .search-card {
@@ -46,7 +49,7 @@ button {
 }
 
 .profile-grid {
-	margin-top: 3rem;
+	margin-top: 1rem;
 }
 
 .search {
@@ -67,7 +70,7 @@ button {
 
 .card-grid {
 	height: 100vh;
-	padding-top: 3rem;
+	padding-top: 2rem;
 }
 
 .modal-content {

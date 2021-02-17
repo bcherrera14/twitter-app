@@ -8,7 +8,7 @@ const TweetFavorites = () => {
 
 	return (
 		<div>
-			<Jumbotron fluid className="mt-5">
+			<Jumbotron fluid className="mt-5 d-flex justify-content-center">
 				<Container className="d-flex flex-column justify-content-center align-items-center">
 					<h1>Trending Profiles</h1>
 					<p>Check out a spontaneous tweet from these trending profiles.</p>

@@ -7,7 +7,7 @@ const Header = () => {
 		<Navbar bg="dark" expand="lg" className="fixed-top navbar-dark">
 			<div className="container">
 				<Link className="navbar-brand" to="/">
-					Daily Tweets
+					Sifter
 				</Link>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
