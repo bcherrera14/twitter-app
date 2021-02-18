@@ -3,14 +3,40 @@ body {
 	background: #edf2f7;
 }
 
+nav {
+	height: 96px;
+	font-size: 1.5rem;
+}
+
+.nav-link {
+	margin: 0 10px;
+}
+
+.landing-page {
+	background-image: url("./images/Sifter-Landing.png");
+
+	height: 100vh;
+	margin-top: 96px;
+	/* background-color: red; */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
 .headline {
 	height: 100vh;
-	margin-top: 56px;
+	margin-top: 96px;
 	margin-bottom: auto;
+}
+
+.logo-image {
+	height: 30px;
 }
 
 div > .jumbotron {
 	min-height: 300px;
+	margin-top: 96px;
+	background-color: #183153;
+	color: whitesmoke;
 }
 
 #search-content {

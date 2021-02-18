@@ -40,7 +40,7 @@ class TweetSearch extends React.Component {
 		console.log(this.state.tweetData);
 		return (
 			<div>
-				<Jumbotron fluid className="mt-5 d-flex justify-content-center">
+				<Jumbotron fluid className="d-flex justify-content-center">
 					<Container className="d-flex flex-column justify-content-center align-items-center">
 						<h1>Search Tweets</h1>
 						<p>Filter through tweets by username or tweet keywords.</p>
