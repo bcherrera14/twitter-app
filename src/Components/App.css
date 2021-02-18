@@ -15,18 +15,14 @@ nav {
 
 .landing-page {
 	background-image: url("./images/Sifter-Landing.png");
-
+	width: 1500px;
 	height: 100vh;
 	margin-top: 96px;
-	/* background-color: red; */
+	margin-left: auto;
+	margin-right: auto;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
-}
-.headline {
-	height: 100vh;
-	margin-top: 96px;
-	margin-bottom: auto;
 }
 
 .logo-image {
